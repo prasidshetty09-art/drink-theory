@@ -1,0 +1,13 @@
+title: Drink Theory
+tagline: The science and craft behind great drinks
+description: Research notes on cocktail science, flavour pairing, fermentation and technique — from Drink Theory Studio in the Himalayas.
+baseurl: "/drink-theory"
+url: ""
+permalink: /:year/:month/:title/
+timezone: Asia/Kolkata
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - README.md

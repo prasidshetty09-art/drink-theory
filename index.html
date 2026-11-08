@@ -1,0 +1,20 @@
+---
+layout: default
+title: Journal
+---
+<section class="hero">
+  <p class="eyebrow">Drink Theory Studio</p>
+  <h1>The science and craft<br>behind great drinks.</h1>
+  <p class="lede">Weekly research notes on flavour pairing, fermentation, infusions and technique — written at a working bar in the Himalayas.</p>
+</section>
+
+<section class="post-list">
+  {% for post in site.posts %}
+  <a class="card" href="{{ post.url | relative_url }}">
+    <p class="eyebrow">{{ post.category | default: 'Research' }} · {{ post.date | date: '%-d %b %Y' }}</p>
+    <h2>{{ post.title }}</h2>
+    {% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
+    <span class="more">Read note →</span>
+  </a>
+  {% endfor %}
+</section>
